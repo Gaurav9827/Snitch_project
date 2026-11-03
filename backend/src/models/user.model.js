@@ -19,6 +19,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "user",
         enum: ["user", "seller"]
+    },
+    refreshToken:{
+        type:String
+
     }
 })
 
