@@ -1,5 +1,5 @@
 import config from "../config/config.js";
-import jwt, { JsonWebTokenError } from "jsonwebtoken"
+import jwt from "jsonwebtoken"
 
 export function createAccessToken({ userId, role }) {
     const accessToken = jwt.sign({
